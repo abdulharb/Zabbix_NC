@@ -1,0 +1,21 @@
+wget --save-cookies cookies.txt \
+     --keep-session-cookies \
+     --post-data 'name=abdul&password=password&autologin=1&enter=Signin' \
+     --delete-after \
+     http://192.168.205.130:8443/index.php
+
+
+wget --load-cookies cookies.txt \
+     http://192.168.205.130:8443/chart2.php?graphid=910&from=now-16h&to=now&height=201&width=1000&profileIdx=web.charts.filter&_=velp5mvd
+
+
+wget --save-cookies cookies.txt \
+     --keep-session-cookies \
+     --post-data 'name={UserName}&password={Password}&autologin=1&enter=Signin' \
+     --delete-after \
+     {URL}/index.php
+
+
+wget --load-cookies cookies.txt \
+     {URL}/chart2.php?graphid={graphid}&from={From_in_format:YYYY-MM-DD}&to={TO_IN_FORMAT:YYYY-MM-DD}=201&width=1000&profileIdx=web.charts.filter&_=velp5mvd
+     
